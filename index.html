@@ -10,11 +10,33 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-        
+    <div id="list">
+        <div class="item" id="example">
+            <div class="header">
+                <p class="title">Butcher's Joy</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('example', 'example-specs')">Specs</button>
+                    <button class="tab" onclick="showTab('example', 'example-loc')">Location</button>
+                    <button class="tab" onclick="showTab('example', 'example-story')">Story</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <img src="images/Butcher's_Joy.jpg" alt="">
+                </div>
+                <div class="main-content">
+                    <div class="tabcontent">
+
+                    </div>
+                    <div class="checkbar">
+                        <button class="tab" onclick="check('example-check')"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="toolpanel">
-        
-    </div>
+    <div id="toolbar">
+            
+    </div>      
 </body>
 </html>
