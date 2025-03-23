@@ -38,7 +38,7 @@ body {
     flex-wrap: nowrap;
     width:80%;
     height:100%;
-    margin: 13% 2%;
+    margin: 2% 2%;
     justify-content: space-around;
     gap: 5px;
 }
@@ -48,7 +48,6 @@ body {
     height: 320px;
     margin-bottom: 20%;
     background-color: var(--background3);
-    padding: 0 10px;
     margin: 10px;
     padding:0;
     display:flex;
@@ -80,7 +79,7 @@ body {
     font-size: larger;
 }
 
-.tab:hover {
+.tab:hover, .icon-tab:hover, .check:hover {
     background-color: var(--foreground1);
 }
 
@@ -94,13 +93,14 @@ body {
     justify-content: space-between;
 }
 
-.navigation .active {
-    background-color: var(--foreground2);
+.tab {
+    padding: 14px 16px;
+    border-radius: 0 0 20px 20px;
+    width: 10vw;
 }
 
-.tab {
+.tab, .icon-tab, .spec-tab, .check {
     height: 90%;
-    width: 10vw;
     font-size: larger;
     /* margin-right: 100%; */
     background-color: var(--background4);
@@ -111,9 +111,15 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
     transition: 0.3s;
-    border-radius: 0 0 20px 20px;
+}
+
+.spec-tab {
+    width:100%;
+}
+
+.icon-tab {
+    width:100%;
 }
 
 .contents {
@@ -121,22 +127,36 @@ body {
     flex-direction: row;
     width:100%;
     height:100%;
+    overflow: hidden;
 }
 
 .icon {
     margin: 20px;
-    height: 195px;
-    width: 195px;
+    height: 200px;
+    width: 200px;
     border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
     outline-color: var(--background1);
     border:5px solid var(--background1);
     background-color: var(--background2);
     overflow: hidden;
 }
 
-.icon img {
-    margin-left: -100px;
-    margin-top: -55px;
+
+.weapon-icon {
+    display:none;
+    height:190px;
+    overflow: hidden;
+}
+
+.icon-navigation {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    height:15%;
+    width:100%;
 }
 
 .main-content {
@@ -144,16 +164,92 @@ body {
     height: 100%;
     display:flex;
     flex-direction: row;
+    align-items: center;
+    overflow: inherit;
 }
 
 .tabcontent {
     width:90%;
-    height:100%;
+    height:90%;
+    color: var(--font);
+    justify-content: center;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.loc, .specs, .story {
+    max-width:80%;
+    display:none;
+    overflow: inherit;
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+
+.loc {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loc-images {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc-images img {
+    max-width: 30%;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    justify-content: space-between;
+}
+
+.spec-rows {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weapon-specs, .weapon-magic {
+    display:none;
+}
+
+.spec-level-navigation {
+    display:flex;
+    height:30px;
+    width: 50%;
+}
+
+.active {
+    background-color: var(--foreground2);
 }
 
 .checkbar {
     height:100%;
     width:10%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.check {
+    background-color: var(--foreground1);
+    border: 2px solid var(--background1);
+    width: 3vh;
+    height: 3vh;
+    margin:10px;
+    border-radius: 15%;
+}
+
+.checked {
+    background-color: var(--background2);
+}
+
+.level-1 {
+    display:block
 }
 
 #toolbar {

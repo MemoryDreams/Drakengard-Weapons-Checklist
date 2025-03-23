@@ -11,29 +11,1151 @@
 </head>
 <body>
     <div id="list">
-        <div class="item" id="example">
+        <!--Start of item!--><div class="item expedition sky-mission sword" id="ButchersJoy">
             <div class="header">
-                <p class="title">Butcher's Joy</p>
+                <p class="title">Butcher's Joy (首切り包丁)</p>
                 <div class="navigation">
-                    <button class="tab active" onclick="showTab('example', 'example-specs')">Specs</button>
-                    <button class="tab" onclick="showTab('example', 'example-loc')">Location</button>
-                    <button class="tab" onclick="showTab('example', 'example-story')">Story</button>
+                    <button class="tab active" onclick="showTab('ButchersJoy', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('ButchersJoy', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('ButchersJoy', 'loc')">Location</button>
                 </div>
             </div>
             <div class="contents">
                 <div class="icon">
-                    <img src="images/Butcher's_Joy.jpg" alt="">
+                    <div id="ButchersJoy-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="ButchersJoy-icon-1" src="images/Butcher's Joy lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="ButchersJoy-icon-2" src="images/Butcher's Joy lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="ButchersJoy-icon-3" src="images/Butcher's Joy lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="ButchersJoy-icon-4" src="images/Butcher's Joy lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
                 </div>
                 <div class="main-content">
-                    <div class="tabcontent">
+                    <div id="ButchersJoy-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
 
+                            </div>
+                            <div id="ButchersJoy-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->2<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.0kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->3<br>
+                            </div>
+                            <div id="ButchersJoy-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->4<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.1kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="ButchersJoy-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->5<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.2kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="ButchersJoy-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->10<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.2kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->11<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="ButchersJoy-magic-1" class="weapon-magic level-1">
+                                <b>Sacrificial Breath</b>: Magic light lasts for <b>10</b> seconds; attack is raised by <b>150%</b>, damage taken lowered by <b>66%</b>.
+                            </div>
+                            <div id="ButchersJoy-magic-2" class="weapon-magic">
+                                <b>Sacrificial Breath</b>: Magic light lasts for <b>15</b> seconds and a fireball will spin around Caim; attack is raised by <b>200%</b>, damage taken lowered by <b>50%</b>.
+                            </div>
+                            <div id="ButchersJoy-magic-3" class="weapon-magic">
+                                <b>Sacrificial Breath</b>: Magic light lasts for <b>20</b> seconds and three fireballs will spin around Caim; attack is raised by <b>250%</b>, damage taken lowered by <b>40%</b>.
+                            </div>
+                            <div id="ButchersJoy-magic-4" class="weapon-magic">
+                                <b>Sacrificial Breath</b>: Magic light lasts for <b>20</b> seconds and four fireballs will spin around Caim; attack is raised by <b>300%</b>, damage taken lowered by <b>33%</b>.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('ButchersJoy', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('ButchersJoy', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('ButchersJoy', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('ButchersJoy', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="ButchersJoy-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        Juices oozing from tender, succulent flesh, the sweet aroma of fine herbs... The master cook made dishes of meat that none in the city could resist.
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        Every day, customers lined up outside his inn, waiting for their chance to partake. Even the king himself would sneak down from his castle to sample the master's art.
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        But once he entered his kitchen, the smiling cook's face would grow stern. The meat he used was no ordinary meat...
+
+                        <br><br><b>Level 4</b><br><br>
+
+                        The years passed, and the cook and his inn disappeared from the town. But his cleaver remains as gleaming and sharp as ever, waiting for its next master.
+                    </div>
+                    <div id="ButchersJoy-loc" class="tabcontent loc">
+                        Expedition: Silent Forest, In The Sky; <br>
+                        <br>Kill all enemies under 2 minutes, 50 seconds. You may use magic.
                     </div>
                     <div class="checkbar">
-                        <button class="tab" onclick="check('example-check')"></button>
+                        <button id="ButchersJoy-check" class="check" onclick="check('ButchersJoy')"></button>
                     </div>
                 </div>
             </div>
-        </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item expedition sky-mission sword" id="Deathdance">
+            <div class="header">
+                <p class="title">Deathdance (死の舞踏)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Deathdance', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Deathdance', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Deathdance', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Deathdance-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Deathdance-icon-1" src="images/Deathdance lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="Deathdance-icon-2" src="images/Deathdance lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="Deathdance-icon-3" src="images/Deathdance lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="Deathdance-icon-4" src="images/Deathdance lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Deathdance-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Deathdance-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->2<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="Deathdance-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->4<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="Deathdance-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->5<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->11<br>
+                            </div>
+                            <div id="Deathdance-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->10<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->14<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Deathdance-magic-1" class="weapon-magic level-1">
+                                <b>Queen Hel's Comfort</b>:  a swirl of black shadow spirits that spin out.
+                            </div>
+                            <div id="Deathdance-magic-2" class="weapon-magic">
+                                <b>Queen Hel's Comfort</b>:  <b>two</b> swirls of black shadow spirits that spin out.
+                            </div>
+                            <div id="Deathdance-magic-3" class="weapon-magic">
+                                <b>Queen Hel's Comfort</b>:  <b>four</b> swirls of black shadow spirits that spin out.
+                            </div>
+                            <div id="Deathdance-magic-4" class="weapon-magic">
+                                <b>Queen Hel's Comfort</b>:  <b>eight</b> swirls of black shadow spirits that spin out.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Deathdance', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Deathdance', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Deathdance', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Deathdance', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Deathdance-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        A long time ago, there was a small nation that was invaded by its mighty neighbor. The country was helpless as the invaders put its women and children to the sword.
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        In the small country, there was a brave and beautiful princess who became determined to save her homeland. She disguised herself as a dancing girl and presented herself to the enemy emperor. 
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        The emperor, entranced by the beauty of the dance, immediately fell in love with the princess. But as he approached her, she plunged this sword into his breast and slew him on the spot. 
+                        <br><br><b>Level 4</b><br><br>
+
+                        After that, the mighty empire fell into ruin and decline, and the princess's country was saved. To this day, every girl of the kingdom dreams of becoming the dancing princess of legend.
+                    </div>
+                    <div id="Deathdance-loc" class="tabcontent loc">
+                        Expedition: Castle of the Goddess, In The Sky; <br>
+                        <br>Kill all enemies including the towers.
+                    </div>
+                    <div class="checkbar">
+                        <button id="Deathdance-check" class="check" onclick="check('Deathdance')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content ground-mission normal-only sword" id="Dragonhook">
+            <div class="header">
+                <p class="title">Dragonhook (地竜の鉤爪)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Dragonhook', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Dragonhook', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Dragonhook', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Dragonhook-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Dragonhook-icon-1" src="images/Dragonhook lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="Dragonhook-icon-2" src="images/Dragonhook lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="Dragonhook-icon-3" src="images/Dragonhook lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="Dragonhook-icon-4" src="images/Dragonhook lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Dragonhook-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Dragonhook-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->13<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->2.0kg<br>
+                                <!-- Material -->Iron ore<br>
+                                <!-- Combo Hits -->3<br>
+                            </div>
+                            <div id="Dragonhook-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->20<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.9kg<br>
+                                <!-- Material -->Iron ore<br>
+                                <!-- Combo Hits -->6<br>
+                            </div>
+                            <div id="Dragonhook-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->25<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.8kg<br>
+                                <!-- Material -->Iron ore<br>
+                                <!-- Combo Hits -->10<br>
+                            </div>
+                            <div id="Dragonhook-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->29<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.7kg<br>
+                                <!-- Material -->Iron ore<br>
+                                <!-- Combo Hits -->12<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Dragonhook-magic-1" class="weapon-magic level-1">
+                                <b>Ironfall</b>:  brings down a huge boulders of iron.
+                            </div>
+                            <div id="Dragonhook-magic-2" class="weapon-magic">
+                                <b>Ironfall</b>:  brings down <b>three</b> huge boulders of iron.
+                            </div>
+                            <div id="Dragonhook-magic-3" class="weapon-magic">
+                                <b>Ironfall</b>:  brings down <b>six</b> huge boulders of iron.
+                            </div>
+                            <div id="Dragonhook-magic-4" class="weapon-magic">
+                                <b>Ironfall</b>:  brings down <b>eight</b> huge boulders of iron.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Dragonhook', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Dragonhook', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Dragonhook', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Dragonhook', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Dragonhook-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        An imperial archaeologist unearthed this weapon's blade from the ruins of an ancient holy place. Believed to be fossilized remains of some beast, the substance was incredibly hard.
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        With great care and reverence, the scientist tried to sharpen the rock. But the substance was impervious to fire, to acid, and to all the tools of his workshop.
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        Driven mad by the unyielding substance that say reproachfully before him, the scientist smashed it against his head again and again till he fell dead of his wounds.
+                        
+                        <br><br><b>Level 4</b><br><br>
+
+                        The darkly glimmering subsstance was the claw of an earth dragon, and only human blood can sharpen its edge. And so for ignorance did another scientist die.
+                    </div>
+                    <div id="Dragonhook-loc" class="tabcontent loc">
+                        Seere's Prayer, Verse 2; <br>
+                        <br>On the south-central nook of the map. Normal Difficulty Only. 
+                        <br>Between hills, to the right of one of the golems.
+                        <dev class="loc-images">
+                            <img src="./images/Dragonhook loc1.png">
+                            <img src="./images/Dragonhook loc2.png">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="Dragonhook-check" class="check" onclick="check('Dragonhook')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content ground-mission sword" id="GlorysBane">
+            <div class="header">
+                <p class="title">Glory's Bane (没落した王家の剣)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('GlorysBane', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('GlorysBane', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('GlorysBane', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="GlorysBane-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="GlorysBane-icon-1" src="images/GlorysBane lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="GlorysBane-icon-2" src="images/GlorysBane lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="GlorysBane-icon-3" src="images/GlorysBane lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="GlorysBane-icon-4" src="images/GlorysBane lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="GlorysBane-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="GlorysBane-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->2<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.3kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="GlorysBane-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->4<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.3kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="GlorysBane-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->5<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.3kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->11<br>
+                            </div>
+                            <div id="GlorysBane-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->10<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.3kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->14<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="GlorysBane-magic-1" class="weapon-magic level-1">
+                                <b>Damocles' Strike</b>:  brings down a sword of light down form the heavens, inflicting huge amounts of damage.
+                            </div>
+                            <div id="GlorysBane-magic-2" class="weapon-magic">
+                                <b>Damocles' Strike</b>:  brings down <b>three</b> swords of light down form the heavens, inflicting huge amounts of damage.
+                            </div>
+                            <div id="GlorysBane-magic-3" class="weapon-magic">
+                                <b>Damocles' Strike</b>:  brings down <b>four</b> swords of light down form the heavens, inflicting huge amounts of damage. 
+                            </div>
+                            <div id="GlorysBane-magic-4" class="weapon-magic">
+                                <b>Damocles' Strike</b>:  brings down <b>eight</b> swords of light down form the heavens, inflicting huge amounts of damage. 
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('GlorysBane', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('GlorysBane', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('GlorysBane', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('GlorysBane', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="GlorysBane-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        This sword belonged to a royal family whose kingdom was destroyed by an evil dragon. The vengeful rage of the family smolders deep within the blade, hidden by the sword's gaudy beauty. 
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        Whoever takes up the sword will suffer from the family's bitter curse. Evil dreams will haunt the victim's nights till he is overtaken by a baleful death. 
+                        
+                        <br><br><b>Level 3</b><br><br>
+
+                        A king of a certain small nation was struck by the sword's beauty and took it for his own. But he, too, became plagued by nightmares, and one day his life and kingdom were taken from him by dragons. 
+
+                        <br><br><b>Level 4</b><br><br>
+
+                        There is but one means to escape the sword's curse: Slay the same dragon that killed the royal family. But no man has yet possessed the strength to cheat fate and break the spell.
+                    </div>
+                    <div id="GlorysBane-loc" class="tabcontent loc">
+                        Chapter 1, Verse 10; <br>
+                        <br>After killing all silver bishops in central part of second floor, the chest will appear in one of the weaponaries. The chest isn't shown on map. 
+                        <br>
+                        <dev class="loc-images">
+                            <img src="./images/GlorysBane loc1.png">
+                            <img src="./images/GlorysBane loc2.png">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="GlorysBane-check" class="check" onclick="check('GlorysBane')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item expedition ground-mission sword" id="HuntersJoy">
+            <div class="header">
+                <p class="title">Hunter's Joy (領主の狩猟刀)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('HuntersJoy', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('HuntersJoy', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('HuntersJoy', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="HuntersJoy-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="HuntersJoy-icon-1" src="images/HuntersJoy lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="HuntersJoy-icon-2" src="images/HuntersJoy lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="HuntersJoy-icon-3" src="images/HuntersJoy lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="HuntersJoy-icon-4" src="images/HuntersJoy lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="HuntersJoy-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="HuntersJoy-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->2<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="HuntersJoy-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->4<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="HuntersJoy-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->5<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->12<br>
+                            </div>
+                            <div id="HuntersJoy-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->10<br>
+                                <!-- Sharpness -->Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->15<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="HuntersJoy-magic-1" class="weapon-magic level-1">
+                                <b>Gyllir's Hoof</b>:  produces a shockwave pulse that travels through the ground and explodes upwards.
+                            </div>
+                            <div id="HuntersJoy-magic-2" class="weapon-magic">
+                                <b>Gyllir's Hoof</b>:  produces <b>two</b> shockwaves pulse that travels through the ground and explodes upwards.
+                            </div>
+                            <div id="HuntersJoy-magic-3" class="weapon-magic">
+                                <b>Gyllir's Hoof</b>:  produces <b>three</b> shockwaves pulse that travels through the ground and explodes upwards.
+                            </div>
+                            <div id="HuntersJoy-magic-4" class="weapon-magic">
+                                <b>Gyllir's Hoof</b>:  produces <b>five</b> shockwaves pulse that travels through the ground and explodes upwards.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('HuntersJoy', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('HuntersJoy', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('HuntersJoy', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('HuntersJoy', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="HuntersJoy-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        In a certain country lived a feudal lord. This lord was enamored of the hunt; each day he rode out to find animals to slay, his favourite hunting sword by his side. 
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        One evening, the animals of the forest gathered together in council. "We cannot survive much longer! We must kill the lord if we wish to live!" 
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        So the animals of the forest surrounded the lord's manor, seeking a way in. But when the lord saw them all, he danced with delight. "So, they have all gathered for the hunt!" 
+
+                        <br><br><b>Level 4</b><br><br>
+
+                        With joy coursing through his veins, the lord rode out and slaughtered all the animals till not one remained in the forest. By the by, the lord lived happily on to a ripe old age.
+                    </div>
+                    <div id="HuntersJoy-loc" class="tabcontent loc">
+                        Expedition: Castle of the Goddess, Around the Castle; <br>
+                        <br>Kill all enemies in the valley on the eastern part of the map.<br>
+                    </div>
+                    <div class="checkbar">
+                        <button id="HuntersJoy-check" class="check" onclick="check('HuntersJoy')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content ground-mission sword normal-only" id="Kingsblood">
+            <div class="header">
+                <p class="title">Kingsblood (古の覇王)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Kingsblood', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Kingsblood', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Kingsblood', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Kingsblood-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Kingsblood-icon-1" src="images/Kingsblood lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="Kingsblood-icon-2" src="images/Kingsblood lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="Kingsblood-icon-3" src="images/Kingsblood lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="Kingsblood-icon-4" src="images/Kingsblood lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Kingsblood-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Kingsblood-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->16<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="Kingsblood-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->22<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->7<br>
+                            </div>
+                            <div id="Kingsblood-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->27<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->10<br>
+                            </div>
+                            <div id="Kingsblood-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->32<br>
+                                <!-- Sharpness -->Very fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->13<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Kingsblood-magic-1" class="weapon-magic level-1">
+                                <b>Thor's Flame</b>:  a magic shaft of energy that pierces the ground to conflagrate all those who venture near. 
+                            </div>
+                            <div id="Kingsblood-magic-2" class="weapon-magic">
+                                <b>Thor's Flame</b>:  <b>four</b> magic shafts of energy that pierce the ground to conflagrate all those who venture near. 
+                            </div>
+                            <div id="Kingsblood-magic-3" class="weapon-magic">
+                                <b>Thor's Flame</b>:  <b>eight</b> magic shafts of energy that pierce the ground to conflagrate all those who venture near. 
+                            </div>
+                            <div id="Kingsblood-magic-4" class="weapon-magic">
+                                <b>Thor's Flame</b>:  <b>twelve</b> magic shafts of energy that pierce the ground to conflagrate all those who venture near. 
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Kingsblood', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Kingsblood', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Kingsblood', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Kingsblood', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Kingsblood-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        In ancient times, this black sword once belonged to a mighty king who built a glorious empire. Under his wise and just rule, the empire thrived and prospered, and knew no equal.
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        But a ripened fruit can only rot. Spoilt by their wealth and prosperity, the servants of the king began to swell with pride--and fell into corruption and depravity.
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        Powerless to cease the rot, the king's summoned a wicked god into the blade of his sword. He then began to murder his treacherous vassals one after another.
+                        
+                        <br><br><b>Level 4</b><br><br>
+
+                        The god inside the blade reveled in the bloodbath. When only the king himself remained, the sword slew him as well, and the silver blade was dyed by the royal blood. 
+                    </div>
+                    <div id="Kingsblood-loc" class="tabcontent loc">
+                        Chapter 11, Verse 1; <br>
+                        <br>You will need to follow a set path to get to the  empty room in the NE corner on the initial floor. Following the set path will spawn enemies in that room. Kill them to get the weapon. The path is, head north through the eastern corridor in the room you start in. Head to the east room, then head north till you reach the intersection just prior to the empty room. Do NOT head to the empty room yet. Instead, head to the next intersection westward. Then head north, and then east, and the enemies should spawn. NORMAL DIFFICULTY ONLY.<br>
+                        <dev class="loc-images">
+                            <img src="./images/Kingsblood loc1.png">
+                            <img src="./images/Kingsblood loc2.png">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="Kingsblood-check" class="check" onclick="check('Kingsblood')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content event sword" id="MaidensKris">
+            <div class="header">
+                <p class="title">Maiden's Kris (涅槃の短剣)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('MaidensKris', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('MaidensKris', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('MaidensKris', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="MaidensKris-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="MaidensKris-icon-1" src="images/MaidensKris lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="MaidensKris-icon-2" src="images/MaidensKris lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="MaidensKris-icon-3" src="images/MaidensKris lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="MaidensKris-icon-4" src="images/MaidensKris lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="MaidensKris-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="MaidensKris-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->3<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Iron Meteorite<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="MaidensKris-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->6<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Iron Meteorite<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="MaidensKris-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->8<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Iron Meteorite<br>
+                                <!-- Combo Hits -->11<br>
+                            </div>
+                            <div id="MaidensKris-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->14<br>
+                                <!-- Sharpness -->Very fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Iron Meteorite<br>
+                                <!-- Combo Hits -->14<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="MaidensKris-magic-1" class="weapon-magic level-1">
+                                <b>Crescentsong</b>:  creates a crescent of light that flies at the enemy causing damage as it moves past them.
+                            </div>
+                            <div id="MaidensKris-magic-2" class="weapon-magic">
+                                <b>Crescentsong</b>: creates <b>three</b> crescent of lights that fly at the enemy causing damage as they moves past them.
+                            </div>
+                            <div id="MaidensKris-magic-3" class="weapon-magic">
+                                <b>Crescentsong</b>: creates <b>five</b> crescent of lights that fly at the enemy causing damage as they moves past them.
+                            </div>
+                            <div id="MaidensKris-magic-4" class="weapon-magic">
+                                <b>Crescentsong</b>: creates <b>nine</b> crescent of lights that fly at the enemy causing damage as they moves past them.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('MaidensKris', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('MaidensKris', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('MaidensKris', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('MaidensKris', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="MaidensKris-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        When the great shrine was built, young women were chosen to be sacrifices. They plunged this kris sword into their own hearts. The blade glimmers with the souls of its young victims.
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        The first sacrifice was a respected and pious believer. The pure woman was chosen to serve as the foundation stone of the new shrine.
+                        
+                        <br><br><b>Level 3</b><br><br>
+
+                        The second sacrifice was a kind girl of the village. Though sad to be chosen for death, she consoled herself with the knowledge that her sacrifice would help others. 
+                        
+                        <br><br><b>Level 4</b><br><br>
+
+                        The third sacrifice was a girl who made her living as a thief. She cursed the gods angrily as her life was taken. At the moment the sword struck home, it coiled and writhed like a wounded snake. 
+                    </div>
+                    <div id="MaidensKris-loc" class="tabcontent loc">
+                        Chapter 2, Verse 6; <br>
+                        <br>Inside one of the damaged huts.<br>
+                        <dev class="loc-images">
+                            <img src="./images/MaidensKris loc1.jpg">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="MaidensKris-check" class="check" onclick="check('MaidensKris')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content event sword" id="Ravenfeeder">
+            <div class="header">
+                <p class="title">Ravenfeeder (輪廻転生)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Ravenfeeder', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Ravenfeeder', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Ravenfeeder', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Ravenfeeder-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Ravenfeeder-icon-1" src="images/Ravenfeeder lvl1.png" alt="Level 1 Butcher's joy.">
+                        <img class="weapon-icon" id="Ravenfeeder-icon-2" src="images/Ravenfeeder lvl2.png" alt="Level 2 Butcher's joy.">
+                        <img class="weapon-icon" id="Ravenfeeder-icon-3" src="images/Ravenfeeder lvl3.png" alt="Level 3 Butcher's joy.">
+                        <img class="weapon-icon" id="Ravenfeeder-icon-4" src="images/Ravenfeeder lvl4.png" alt="Level 4 Butcher's joy.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Ravenfeeder-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Ravenfeeder-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->7<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->3<br>
+                            </div>
+                            <div id="Ravenfeeder-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->11<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->5<br>
+                            </div>
+                            <div id="Ravenfeeder-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->14<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->8<br>
+                            </div>
+                            <div id="Ravenfeeder-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->19<br>
+                                <!-- Sharpness -->Very fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->14<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Ravenfeeder-magic-1" class="weapon-magic level-1">
+                                <b>Breath of the Aesir</b>:  Makes the wielder invincible for <b>10</b> seconds by swirling runes of the gods around him.
+                            </div>
+                            <div id="Ravenfeeder-magic-2" class="weapon-magic">
+                                <b>Breath of the Aesir</b>: Makes the wielder invincible for <b>15</b> seconds by swirling runes of the gods around him.
+                            </div>
+                            <div id="Ravenfeeder-magic-3" class="weapon-magic">
+                                <b>Breath of the Aesir</b>: Makes the wielder invincible for <b>25</b> seconds by swirling runes of the gods around him.
+                            </div>
+                            <div id="Ravenfeeder-magic-4" class="weapon-magic">
+                                <b>Breath of the Aesir</b>: Makes the wielder invincible for <b>30</b> seconds by swirling runes of the gods around him.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Ravenfeeder', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Ravenfeeder', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Ravenfeeder', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Ravenfeeder', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Ravenfeeder-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        A circular-bladed sword owned by a noble family that lived deep within a great forest. It was said that the user of this weapon would be blessed by the gods with three lives.
+                        
+                        <br><br><b>Level 2</b><br><br>
+
+                        The sword was originally designed as a tool for torture. Its outer blade is sharp enough to bisect a man with one stroke, while the inner is kept dull to inflict hideous pain.
+                        
+                        <br><br><b>Level 3</b><br><br>
+
+                        Poison can be poured into the handle. As soon as the victim is cut, the poison flows into the wound and causes nearly instantaneous death.
+                        
+                        <br><br><b>Level 4</b><br><br>
+
+                        So cruel was this weapon judged to be, it was banned by the old kings. Soon thereafter, it became infamous as the tool of assassins. 
+
+                    </div>
+                    <div id="Ravenfeeder-loc" class="tabcontent loc">
+                        Chapter 04, Verse VI; <br>
+                        <br>Walk to the upper left area from your starting point. The chest is between some trees.<br>
+                        <dev class="loc-images">
+                            <img src="./images/Ravenfeeder loc1.png">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="Ravenfeeder-check" class="check" onclick="check('Ravenfeeder')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item expedition sky-mission sword" id="Scream">
+            <div class="header">
+                <p class="title">Scream (少年の欲望)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Scream', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Scream', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Scream', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Scream-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Scream-icon-1" src="images/Scream lvl1.png" alt="Level 1 Scream.">
+                        <img class="weapon-icon" id="Scream-icon-2" src="images/Scream lvl2.png" alt="Level 2 Scream.">
+                        <img class="weapon-icon" id="Scream-icon-3" src="images/Scream lvl3.png" alt="Level 3 Scream.">
+                        <img class="weapon-icon" id="Scream-icon-4" src="images/Scream lvl4.png" alt="Level 4 Scream.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Scream-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Scream-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->7<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->4<br>
+                            </div>
+                            <div id="Scream-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->8<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.4kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->7<br>
+                            </div>
+                            <div id="Scream-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->10<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->10<br>
+                            </div>
+                            <div id="Scream-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->16<br>
+                                <!-- Sharpness -->Very fine<br>
+                                <!-- Reach -->Short<br>
+                                <!-- Weight -->1.5kg<br>
+                                <!-- Material -->Iron<br>
+                                <!-- Combo Hits -->13<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Scream-magic-1" class="weapon-magic level-1">
+                                <b>Faerie Horn</b>:  Summons a faery to spin around Caim for <b>10</b> seconds, inflicting huge amounts of damage on anything it touches.
+                            </div>
+                            <div id="Scream-magic-2" class="weapon-magic">
+                                <b>Faerie Horn</b>: Summons <b>two</b> faeries to spin around Caim for <b>10</b> seconds, inflicting huge amounts of damage on anything it touches.
+                            </div>
+                            <div id="Scream-magic-3" class="weapon-magic">
+                                <b>Faerie Horn</b>: Summons <b>four</b> faeries to spin around Caim for <b>10</b> seconds, inflicting huge amounts of damage on anything it touches.
+                            </div>
+                            <div id="Scream-magic-4" class="weapon-magic">
+                                <b>Faerie Horn</b>: Summons <b>four</b> faeries to spin around Caim for <b>15</b> seconds, inflicting huge amounts of damage on anything it touches.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Scream', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Scream', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Scream', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Scream', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Scream-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        There was once a handsome young man who stole from village to village, seducing the maidens and promising his hand in marriage. 
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        Captivated by his charm and beauty, the young women gave him their land, their gold, their livestock, and their hearts. But at one midsummer festival, his victims met and discovered the young man's faruds. 
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        The incensed women vowed revenge. With the help of the King of the Faeries, they cast a cruse on the youth, dooming the suitor's still-living soul to be sealed within this sword.
+
+                        <br><br><b>Level 4</b><br><br>
+
+                        Even now, from deep within the cold steel of the blade, you can hear the pitiful screams of the young man as he laments his callous crimes.
+                    
+                    </div>
+                    <div id="Scream-loc" class="tabcontent loc">
+                        Expedition: The Imperial Capital, In The Sky; <br>
+                        <br>Kill ALL ENEMIES in 5:00 and have at least 50% HP.<br>
+                    </div>
+                    <div class="checkbar">
+                        <button id="Scream-check" class="check" onclick="check('Scream')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
+        <!--Start of item!--><div class="item story-content event sword" id="Swordsmasher">
+            <div class="header">
+                <p class="title">Swordsmasher (白蝋の剣)</p>
+                <div class="navigation">
+                    <button class="tab active" onclick="showTab('Swordsmasher', 'specs')">Specs</button>
+                    <button class="tab" onclick="showTab('Swordsmasher', 'story')">Story</button>
+                    <button class="tab" onclick="showTab('Swordsmasher', 'loc')">Location</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="icon">
+                    <div id="Swordsmasher-icon" class="icons-div">
+                        <img class="weapon-icon level-1" id="Swordsmasher-icon-1" src="images/Swordsmasher lvl1.png" alt="Level 1 Swordsmasher.">
+                        <img class="weapon-icon" id="Swordsmasher-icon-2" src="images/Swordsmasher lvl2.png" alt="Level 2 Swordsmasher.">
+                        <img class="weapon-icon" id="Swordsmasher-icon-3" src="images/Swordsmasher lvl3.png" alt="Level 3 Swordsmasher.">
+                        <img class="weapon-icon" id="Swordsmasher-icon-4" src="images/Swordsmasher lvl4.png" alt="Level 4 Swordsmasher.">
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div id="Swordsmasher-specs" class="tabcontent specs">
+                        <div class="spec-rows">
+                            <div>
+                                Attack Strength<br>
+                                Sharpness<br>
+                                Reach<br>
+                                Weight<br>
+                                Material<br>
+                                Combo Hits<br>
+
+                            </div>
+                            <div id="Swordsmasher-specs-1" class="weapon-specs level-1">
+                                <!-- Attack Strength -->7<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.6kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->3<br>
+                            </div>
+                            <div id="Swordsmasher-specs-2" class="weapon-specs">
+                                <!-- Attack Strength -->11<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.8kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->6<br>
+                            </div>
+                            <div id="Swordsmasher-specs-3" class="weapon-specs">
+                                <!-- Attack Strength -->14<br>
+                                <!-- Sharpness -->Very Fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.8kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->9<br>
+                            </div>
+                            <div id="Swordsmasher-specs-4" class="weapon-specs">
+                                <!-- Attack Strength -->19<br>
+                                <!-- Sharpness -->Very fine<br>
+                                <!-- Reach -->Long<br>
+                                <!-- Weight -->1.9kg<br>
+                                <!-- Material -->Steel<br>
+                                <!-- Combo Hits -->12<br>
+                            </div>
+                        </div>
+                        <div class="magic-desc">
+                            <div id="Swordsmasher-magic-1" class="weapon-magic level-1">
+                                <b>Pale Death</b>: Caim become invisible for <b>10</b> seconds. During that time, Caim's attack strength is increased by <b>150%</b>.
+                            </div>
+                            <div id="Swordsmasher-magic-2" class="weapon-magic">
+                                <b>Pale Death</b>: Caim become invisible for <b>15</b> seconds. During that time, Caim's attack strength is increased by <b>200%</b>.
+                            </div>
+                            <div id="Swordsmasher-magic-3" class="weapon-magic">
+                                <b>Pale Death</b>: Caim become invisible for <b>20</b> seconds. During that time, Caim's attack strength is increased by <b>250%</b>.
+                            </div>
+                            <div id="Swordsmasher-magic-4" class="weapon-magic">
+                                <b>Pale Death</b>: Caim become invisible for <b>25</b> seconds. During that time, Caim's attack strength is increased by <b>300%</b>.
+                            </div>
+                        </div>
+                        <div class="spec-level-navigation">
+                            Level:   
+                            <button class="spec-tab active" onclick="showSpec('Swordsmasher', '1')">1</button>
+                            <button class="spec-tab" onclick="showSpec('Swordsmasher', '2')">2</button>
+                            <button class="spec-tab" onclick="showSpec('Swordsmasher', '3')">3</button>
+                            <button class="spec-tab" onclick="showSpec('Swordsmasher', '4')">4</button>
+                        </div>
+                    </div>
+                    <div id="Swordsmasher-story" class="tabcontent story">
+                        <b>Level 1</b><br><br>
+
+                        A sword serrated like a saw, able to cut through enemy weapons. But with each use, vibrations shake the user's arm, causing the flesh to turn weak and translucent like wax. 
+
+                        <br><br><b>Level 2</b><br><br>
+
+                        Many, many centuries ago, there was a brave knight who fought and defeated countless enemies. But as he fought, his flesh became paler and paler. 
+
+                        <br><br><b>Level 3</b><br><br>
+
+                        Then came a war on which the fate of the kingdom hung in balance. The knight took the head of the enemy general and won the battle. But he had grown so pale as to be transparent. 
+
+                        <br><br><b>Level 4</b><br><br>
+
+                        As the soldiers celebrated the victory, a single arrow struck the knight through his heart. But none could see the invisible knight, and his death went noticed by none.
+
+                    </div>
+                    <div id="Swordsmasher-loc" class="tabcontent loc">
+                        Chapter 3, verse 7; <br>
+                        <br> Hold Left-Up diagonally and run in that direction and you'll pass a small rock. Beyond that will be the treasure chest.<br>
+                        <dev class="loc-images">
+                            <img src="./images/Swordsmasher loc1.png">
+                        </dev>
+                    </div>
+                    <div class="checkbar">
+                        <button id="Swordsmasher-check" class="check" onclick="check('Swordsmasher')"></button>
+                    </div>
+                </div>
+            </div>
+        <!--End of item!--></div>
     </div>
     <div id="toolbar">
             
