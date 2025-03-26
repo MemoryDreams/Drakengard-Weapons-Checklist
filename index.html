@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drakengard Weapon Checklist</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="icon" href="">
     <script src="script.js"></script>
+    <link rel="icon" href="images/Drakengard-icon.png" type="image/x-icon">
 </head>
 <body>
     <div id="list">
@@ -1158,7 +1158,17 @@
         <!--End of item!--></div>
     </div>
     <div id="toolbar">
-            
+        <div class="button-panel">
+            <button class="tool-button" onclick="hideMarked()">Hide Marked</button>
+            <button class="tool-button" onclick="showMarked()">Show Marked</button>
+            <button class="tool-button" onclick="exportMarks()">Export Marked</button>
+            <button class="tool-button" onclick="importMarks()">Import Marked</button>
+        </div>
+        <div class="textarea">
+            <textarea name="ctrl+A, ctrl+C" id="input-output">
+
+            </textarea>
+        </div>
     </div>      
 </body>
 </html>

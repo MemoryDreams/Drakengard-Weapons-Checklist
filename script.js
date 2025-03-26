@@ -82,12 +82,92 @@ function showSpec(weapon, level)
 }
 
 function check(weapon) {
-    if (document.getElementById(weapon).classList.contains('marked')) {
-        document.getElementById(weapon).className = document.getElementById(weapon).className.replace(" marked", "");
-        event.target.className = event.target.className.replace(" checked", "");
+    if (document.getElementById(weapon).classList.contains('marked')) 
+    {
+        removeMark(weapon)
     } else {
-        document.getElementById(weapon).className += " marked";
-        event.target.className += " checked";
+        putMark(weapon);
     }
-    
+}
+
+function putMark(weapon)
+{
+    document.getElementById(weapon).className += " marked";
+    document.getElementById(weapon + "-check").className += " checked";
+}
+
+function removeMark(weapon)
+{
+    document.getElementById(weapon).className = document.getElementById(weapon).className.replace(" marked", "");
+    document.getElementById(weapon + "-check").className = document.getElementById(weapon + "-check").className.replace(" checked", "");
+}
+
+function hideMarked() 
+{
+    let items = document.getElementsByClassName("marked");
+    for (i = 0; i < items.length; i++) 
+    {
+        items[i].style.setProperty("display", "none");
+    }
+}
+
+function showMarked() 
+{
+    let items = document.getElementsByClassName("marked");
+    for (i = 0; i < items.length; i++) 
+    {
+        items[i].style.setProperty("display", "flex");
+    }
+}
+
+function exportMarks()
+{
+    let outputText = "";
+    let items = document.getElementsByClassName("item");
+    for (i = 0; i < items.length; i++) 
+    {
+        outputText += items[i].id + " ";
+        if (items[i].classList.contains("marked"))
+        {
+            outputText += "true";
+        }
+        else
+        {
+            outputText += "false";
+        }
+        outputText += "\n";
+    }
+    document.getElementById("input-output").textContent = outputText;
+}
+
+function importMarks()
+{
+    let inputText = document.getElementById("input-output").textContent;
+    let lines = inputText.split("\n");
+    let items = lines.map(line => line.split(" "));
+    let docItems = document.getElementsByClassName("item");
+
+    for (i = 0; i < docItems.length; i++)
+    {
+        for (j = 0; j < lines.length; j++)
+        {
+            if (docItems[i].id == items[j][0] && items[j][1] == "true")
+            {
+                if (!document.getElementById(docItems[i].id).classList.contains("marked"))
+                {
+                    putMark(docItems[i].id);
+                }
+                
+            } 
+            else if (docItems[i].id == items[j][0]) 
+            {
+                if (document.getElementById(docItems[i].id).classList.contains("marked"))
+                {
+                    removeMark(docItems[i].id);
+                }
+                
+            }
+        }
+    }
+
 }

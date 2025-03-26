@@ -79,7 +79,7 @@ body {
     font-size: larger;
 }
 
-.tab:hover, .icon-tab:hover, .check:hover {
+.tool-button:hover, .tab:hover, .icon-tab:hover, .check:hover {
     background-color: var(--foreground1);
 }
 
@@ -99,7 +99,7 @@ body {
     width: 10vw;
 }
 
-.tab, .icon-tab, .spec-tab, .check {
+.tab, .icon-tab, .spec-tab, .check, .tool-button {
     height: 90%;
     font-size: larger;
     /* margin-right: 100%; */
@@ -262,4 +262,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
+
+.tool-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button-panel {
+    height: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input-output {
+    width: 250px;
+    height: 250px;
+    overflow-y: scroll;
+}
+
